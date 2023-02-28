@@ -12,6 +12,7 @@ const Index = async () => {
     <div>
       App dir
       <Link href="/click">Count Example</Link>
+      <Link href="/pages1">Page Example</Link>
       {data.map((item: any) => (
         <Link href={`/todos/${item.id}`} key={item.id}>
           {item.title}
