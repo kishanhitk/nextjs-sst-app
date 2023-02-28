@@ -12,13 +12,17 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "sst": "^2.0.39",
+    "@tsconfig/node16": "^1.0.3",
     "aws-cdk-lib": "2.62.2",
     "constructs": "10.1.156",
-    "typescript": "^4.9.5",
-    "@tsconfig/node16": "^1.0.3"
+    "sst": "^2.0.39",
+    "typescript": "^4.9.5"
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@serverless-stack/resources": "^1.18.4",
+    "@sls-next/lambda-at-edge": "^3.7.0"
+  }
 }
