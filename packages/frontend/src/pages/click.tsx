@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
 
   return (
     <div className="App">
+      <Link href="/"> Home</Link>
       {count && <p>You clicked me {count} times.</p>}
       <button onClick={onClick}>Click Me!</button>
     </div>

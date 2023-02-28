@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Index = async () => {
@@ -7,12 +8,14 @@ const Index = async () => {
     },
   });
   const data = await res.json();
-  console.log(data);
   return (
     <div>
       App dir
+      <Link href="/click">Count Example</Link>
       {data.map((item: any) => (
-        <div key={item.id}>{item.title}</div>
+        <Link href={`/todos/${item.id}`} key={item.id}>
+          {item.title}
+        </Link>
       ))}
     </div>
   );
