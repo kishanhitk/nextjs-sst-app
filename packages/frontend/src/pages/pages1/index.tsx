@@ -5,7 +5,7 @@ const pages1 = () => {
   return (
     <div>
       pages1
-      <Link href="/">Home</Link>
+      <Link href="/">Home Page</Link>
       <Link href="/pages2">Pages2</Link>
     </div>
   );
